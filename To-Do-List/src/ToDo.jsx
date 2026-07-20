@@ -12,6 +12,8 @@ function ToDo(){
             setTasks(tasks =>([...tasks, newTask]))
             document.getElementById('input-value').value=""
             setNewtasks("")
+        }else{
+            window.alert("Enter a valid task")
         }
     }
     function deleteTask(index){
