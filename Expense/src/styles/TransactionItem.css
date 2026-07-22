@@ -1,0 +1,58 @@
+.transaction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.transaction-meta {
+  display: grid;
+  gap: 6px;
+}
+
+.transaction-meta h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #f4faff;
+}
+
+.transaction-meta p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.transaction-meta p.income {
+  color: #7ed8a1;
+}
+
+.transaction-meta p.expense {
+  color: #ff8686;
+}
+
+.transaction-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.small-button {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #eef5ff;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.small-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.small-button.delete {
+  border-color: rgba(255, 134, 134, 0.25);
+}

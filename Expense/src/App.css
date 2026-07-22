@@ -1,0 +1,44 @@
+.expense-app {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr);
+  gap: 24px;
+  padding: 24px 0 48px;
+}
+
+.filter-panel {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+}
+
+.filter-panel h2 {
+  margin: 0;
+  color: #eef6ff;
+  font-size: 1.35rem;
+}
+
+.filter-panel__controls {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 720px) {
+  .filter-panel__controls {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}
+
+@media (min-width: 880px) {
+  .expense-app {
+    grid-template-columns: minmax(320px, 420px) minmax(420px, 1fr);
+  }
+}
+
+@media (min-width: 1180px) {
+  .expense-app {
+    grid-template-columns: minmax(360px, 480px) minmax(560px, 1fr);
+  }
+}

@@ -8,16 +8,16 @@ function Weather(){
 
         if(city.trim()==""){
             alert("Please enter city");
+            return;
         }
         try{
             setLoading(true)
-            const API_KEY = 'd9b700f142db71b58af077dbf8fd0b7b'
-
+            const API_KEY = import.meta.env.VITE_API_KEY;
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
 
             const data = await response.json();
 
-            if(data.cod=== "404"){ //cod is a code status cod=200 success, 404 not found, 500 server issue
+            if(data.cod === "404"){ //cod is a code status cod=200 success, 404 not found, 500 server issue
                 window.alert("city not found")
                 return
             }

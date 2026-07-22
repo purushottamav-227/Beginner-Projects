@@ -1,0 +1,27 @@
+.search-bar {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+}
+
+.search-bar label {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #d9e6ff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: rgba(15, 28, 56, 0.95);
+  color: #eef5ff;
+}
+
+.search-bar input::placeholder {
+  color: rgba(230, 240, 255, 0.66);
+}
+

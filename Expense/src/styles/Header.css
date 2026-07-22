@@ -1,0 +1,18 @@
+.header {
+  padding: 28px 20px 14px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(8, 14, 30, 0.72);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+  color: #f7fbff;
+  text-shadow: 0 10px 30px rgba(24, 78, 146, 0.28);
+}

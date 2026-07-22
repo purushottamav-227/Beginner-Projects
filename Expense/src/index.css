@@ -1,0 +1,53 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7efff;
+  background-color: #09101c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, rgba(96, 132, 255, 0.18), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(140, 255, 255, 0.12), transparent 24%),
+    linear-gradient(180deg, #09101c 0%, #07101b 100%);
+  color: #eef4ff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.30);
+  border-radius: 30px;
+}
+
+.glass-card h2,
+.glass-card h3,
+.glass-card p,
+.glass-card label {
+  color: #f0f6ff;
+}

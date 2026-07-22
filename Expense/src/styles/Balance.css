@@ -1,0 +1,49 @@
+.CIE {
+  display: grid;
+  gap: 20px;
+  padding: 28px 24px;
+}
+
+.CIE h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+}
+
+.CIE p {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #eaf2ff;
+}
+
+.Income-Expense {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.Income-Expense div {
+  padding: 18px 16px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.Income-Expense h3 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+  color: #d8e5ff;
+}
+
+.Income-Expense p {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .Income-Expense {
+    grid-template-columns: 1fr;
+  }
+}

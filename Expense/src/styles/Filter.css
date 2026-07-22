@@ -1,0 +1,30 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-bar button {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e9f4ff;
+  padding: 12px 18px;
+  border-radius: 16px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.filter-bar button:hover,
+.filter-bar button.active {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.30);
+}
+
+@media (max-width: 720px) {
+  .filter-bar {
+    justify-content: center;
+  }
+}
+
